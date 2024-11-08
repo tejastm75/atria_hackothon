@@ -1,0 +1,117 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+    background-color: #f4f4f4; /* Default background color */
+    color: #333; /* Default text color */
+}
+
+/* Links and Hover Effects */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for link color and transform */
+}
+
+a:hover {
+    color: #2980b9;  /* Hover color for links */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: padding 0.3s ease, margin 0.3s ease; /* Smooth transition for container padding and margin */
+}
+
+/* Fade In Effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Card and Box Hover Transitions */
+.card, .box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Hover Transitions */
+.icon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #f39c12; /* Change icon color on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Button Hover Transitions */
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #f39c12;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Adding Smooth Transition for Section Titles */
+section h2 {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section h2:hover {
+    color: #2980b9; /* Change title color on hover */
+    transform: translateX(5px); /* Slide effect on hover */
+}
+
+/* Additional Transition for Background of Sections */
+section {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* For a smoother transition, use this for background-color transitions */
+header, footer {
+    transition: background-color 0.3s ease;
+}

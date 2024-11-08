@@ -1,0 +1,117 @@
+/* Our Services Section */
+#services {
+    background: linear-gradient(135deg, #f0f0f0, #d9e3f0);
+    padding: 80px 30px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#services p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid transparent;
+}
+
+.service-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.service-list li:hover::before {
+    opacity: 1;
+}
+
+.service-list li i {
+    font-size: 4rem;
+    color: #3498db;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.service-list li:hover i {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.service-list li:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+}
+
+.service-list li p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.service-list li:hover p {
+    color: #fff;
+}
+
+/* Responsive Design for Services */
+@media (max-width: 768px) {
+    #services h2 {
+        font-size: 2.2rem;
+    }
+
+    #services p {
+        font-size: 1rem;
+    }
+
+    .service-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .service-list li {
+        padding: 30px 15px;
+    }
+
+    .service-list li i {
+        font-size: 3rem;
+    }
+}

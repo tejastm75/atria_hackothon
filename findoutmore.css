@@ -1,0 +1,48 @@
+#find-out-more {
+    text-align: center;
+    margin: 100px auto;
+    padding: 60px 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 800px; /* Center and restrict max width for desktop */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a clean look */
+}
+
+#find-out-more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #find-out-more {
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+        margin: 50px 20px;  /* Adjust margin for smaller screens */
+    }
+
+    #find-out-more h2 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .cta-button {
+        font-size: 1.1rem; /* Adjust button size for smaller screens */
+    }
+}

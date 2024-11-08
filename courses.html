@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <style>
+        /* Basic Styling */
+        :root {
+            --primary-color: #2d89e5;
+            --secondary-color: #333;
+            --background-color: #f4f4f4;
+            --button-hover: #1c5b8d;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .course-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .course {
+            background-color: white;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .course:hover img {
+            transform: scale(1.05);
+        }
+
+        .course h3 {
+            color: var(--secondary-color);
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .course p {
+            color: #555;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .course .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 15px;
+        }
+
+        .course button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .course button:hover {
+            background-color: var(--button-hover);
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .course-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Available Courses</h1>
+    </header>
+
+    <div class="course-container">
+        <!-- Course 1 -->
+        <div class="course">
+            <img src="https://media.istockphoto.com/id/1334906074/photo/web-designer-working-with-multiple-devices.jpg?s=612x612&w=0&k=20&c=QZ0pu9OMddCujWq3_a1OZSEILKSmONxpY-aCQ2mwCkw=" alt="Course 1">
+            <h3>Web Development Bootcamp</h3>
+            <p>Learn HTML, CSS, JavaScript, and React in this comprehensive bootcamp.</p>
+            <div class="price">999rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course">
+            <img src="https://media.istockphoto.com/id/1481181755/photo/african-american-man-writing-lines-of-code-on-desktop-computer-with-multiple-monitors-and.jpg?s=2048x2048&w=is&k=20&c=fP0pdsAVB1JaLtHocSOxx4Bl9XjzJTGjMLVyA4wWwoY=" alt="Course 2">
+            <h3>Data Science for Beginners</h3>
+            <p>Start your journey into Data Science with Python, Pandas, and Machine Learning.</p>
+            <div class="price">1299rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course">
+            <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg" alt="Course 3">
+            <h3>Mobile App Development</h3>
+            <p>Build real-world mobile apps using React Native and get hands-on experience.</p>
+            <div class="price">2500rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course">
+            <img src="https://media.istockphoto.com/id/1443560890/photo/digital-marketing-business-technology-concept-website-advertisement-email-social-media.jpg?s=612x612&w=0&k=20&c=S7d_Mof_fEsM69inW540APogoXkz-eA23XE1AIhTaBA=" alt="Course 4">
+            <h3>Digital Marketing Mastery</h3>
+            <p>Learn SEO, content marketing, PPC, and more in this complete marketing course.</p>
+            <div class="price">699rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+        <div class="course">
+            <img src="https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="course 4">
+            <h3>Python</h3>
+            <p>Learn Python. Python is a popular programming language. Python can be used on a server to create web applications. Start learning Python now.</p>
+            <div class="price">1499rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+        
+        <div class="course">
+            <img src="https://media.istockphoto.com/id/1443560890/photo/digital-marketing-business-technology-concept-website-advertisement-email-social-media.jpg?s=612x612&w=0&k=20&c=S7d_Mof_fEsM69inW540APogoXkz-eA23XE1AIhTaBA=" alt="Course 4">
+            <h3>machine learning</h3>
+            <p>Machine learning  is a branch of artificial intelligence that allows systems to learn and improve from data without being explicitly programmed</p>
+            <div class="price">999rs</div>
+            <button onclick="window.location.href='course-details.html'">Learn More</button>
+        </div>
+    </div>
+
+</body>
+</html>

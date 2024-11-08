@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterSolis InfoTech - Tools & Tips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .center-content {
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #007bff;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        .underline {
+            width: 60px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 15px auto;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 50%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .contributors img {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tools & Tips Section -->
+    <div class="center-content">
+        <h1>Tools & Tips</h1>
+        <div class="underline"></div>
+        <p>At MasterSolis InfoTech, we strive to provide our clients with the best resources available in the industry. Our team of experts has compiled a variety of useful resources to help you succeed in your business endeavors. Browse through our collection and feel free to download any resources that you find helpful.</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search 'Files & Folders'..." onkeyup="searchTable()">
+    </div>
+
+    <!-- Files & Folders Table -->
+    <table id="filesTable">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Last Updated</th>
+                <th>Views</th>
+                <th>Favorites</th>
+                <th>Contributors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cloud Solutions Tools <br> <small>0 items</small></td>
+                <td>Nov 26, 2023</td>
+                <td>25</td>
+                <td>☆ 0</td>
+                <td class="contributors"><img src="user_icon.png" alt="User" width="20"> Praveen Pc</td>
+            </tr>
+            <tr>
+                <td>IT Management <br> <small>0 items</small></td>
+                <td>Nov 26, 2023</td>
+                <td>8</td>
+                <td>☆ 0</td>
+                <td class="contributors"><img src="user_icon.png" alt="User" width="20"> Praveen Pc</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+        function searchTable() {
+            const input = document.querySelector('.search-bar input').value.toLowerCase();
+            const rows = document.querySelectorAll('#filesTable tbody tr');
+            
+            rows.forEach(row => {
+                const itemName = row.cells[0].textContent.toLowerCase();
+                row.style.display = itemName.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

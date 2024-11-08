@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MasterSolis InfoTech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4b79a1, #283e51); /* Vibrant gradient background */
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .login-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #4b79a1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus {
+            border-color: #4b79a1;
+            outline: none;
+        }
+        button {
+            background-color: #4b79a1;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #3b5f72;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .options a {
+            text-decoration: none;
+            color: #4b79a1;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        .options a:hover {
+            color: #3b5f72;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+        .signup-link a {
+            color: #4b79a1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .signup-link a:hover {
+            color: #3b5f72;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="options">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

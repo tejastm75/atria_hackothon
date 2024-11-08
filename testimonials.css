@@ -1,0 +1,82 @@
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;  /* Initial state (invisible) */
+    animation: fadeIn 1.5s ease-in-out forwards;  /* Apply fade-in animation */
+    font-family: 'Poppins', sans-serif;  /* Set a smooth, modern font */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2980b9;  /* Change heading color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Text Hover Transition */
+#testimonials h2:hover {
+    color: #f39c12;  /* Hover effect color */
+    transform: translateY(-5px);  /* Slightly lift the heading */
+}
+
+.testimonial {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+/* Add hover effect for testimonial content */
+.testimonial:hover {
+    transform: scale(1.05);  /* Slight zoom effect */
+    font-size: 1.25rem;  /* Increase font size on hover */
+}
+
+/* Testimonials text styling */
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Hover color change for text */
+.testimonial p:hover {
+    color: #2980b9;  /* Hover effect color for text */
+}
+
+.testimonial strong {
+    font-weight: bold;
+    color: #f39c12;  /* Highlighted name color */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for name */
+.testimonial strong:hover {
+    color: #2980b9;  /* Hover effect color for name */
+}
+
+/* Add a smooth background transition for the entire section */
+#testimonials:hover {
+    background-color: #ecf0f1;  /* Slight background color change on hover */
+    transition: background-color 0.3s ease;
+}
